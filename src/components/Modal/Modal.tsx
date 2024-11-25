@@ -1,18 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import './Modal.css';
-import '../../global.css';
+import "./Modal.css";
+import "../../global.css";
 
 interface ModalProps {
-    children: JSX.Element
+  children: JSX.Element;
 }
 
-export const Modal:React.FC<ModalProps> = (props:ModalProps) => {
+export const Modal: React.FC<ModalProps> = (props: ModalProps) => {
   return (
     <div className="modal-overlay">
-        <div className="modal-container bg-color">
-            {props.children}
-        </div>
+      <div className="modal-container bg-color">{props.children}</div>
     </div>
-  )
-}
+  );
+};
